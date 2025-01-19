@@ -2,27 +2,43 @@
 
 import image from "../assets/about-avatar.png";
 
+const styles = {
+  heading: {
+    lineHeight: "0%",
+    paddingBottom: "32px",
+    fontSize: "2.8em",
+    fontWeight: "500",
+  },
+  paragraph: {
+    fontSize: "1.5em",
+  },
+  span: {
+    fontWeight: "800",
+    color: "#315659",
+  },
+};
+
 export default function About() {
   return (
     <div className="page-section">
       <div className="page-layout">
-        <div className="about-bento">
+        <div className="bento">
           <img
             src={image}
             className="about-avatar"
           />
-          <div className="about-text">
-            <h1>👋Hey There!</h1>
-            <p>
-              My name is Anna and I'm a UX Designer with 3 years of experience
-              ... and currently on a sidequest to learn how to code! This year I
-              want to take my skills to the next level and combine my design
-              expertise with more advanced technical proficiency to craft
-              holistic digital experiences.
+          <div>
+            <h1 style={styles.heading}>Hi, I'm Anna🧋</h1>
+            <p style={styles.paragraph}>
+              In my past life, I was a Registered Nurse but for the last 3 years
+              UX Design has been my trade. <br></br> <br></br>
+              Adding to my artillery, I am{" "}
+              <span style={styles.span}> {"<learning how to code>"}</span> which
+              has really given me a new breadth of knowledge and has improved my
+              approaches to creating scalable designs.
               <br></br>
-              <br></br>
-              I built this site entirely from scratch, embracing the
-              opportunity to enhance my front-end development skills. Take a look around and thanks for stopping by!
+              <br></br>I built this site entirely from scratch, embracing the
+              opportunity to enhance my front-end development skills!{" "}
             </p>
           </div>
         </div>

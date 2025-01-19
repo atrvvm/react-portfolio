@@ -138,5 +138,32 @@ a:hover {
 }
 
 .resume-img {
-  height: 640px;
+  height: 520px;
+  margin-bottom: 1.2em;
+  box-shadow: 12px 8px 64px #202a2ba6;
+}
+
+button {
+  width: 240px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #C3F73A;
+  color: #0d1111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  border: #253031 solid 1.5px;
+}
+
+.download-btn :hover {
+  background-color: #98c42b !important;
+
+}
+
+.download-btn {
+  width: 100% !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  background-color: #C3F73A !important;
+  color: black !important;
 }

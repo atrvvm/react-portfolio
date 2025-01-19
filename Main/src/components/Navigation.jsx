@@ -10,11 +10,7 @@ export default function NavRoute() {
     <div className="nav-section">
       <div className="nav-layout">
         <div className="nav-item">
-          <NavLink
-            to="/About"
-          >
-            ABOUT
-          </NavLink>
+          <NavLink to="/About">ABOUT</NavLink>
         </div>
         <div className="nav-item">
           <NavLink to="/Projects">PORTFOLIO</NavLink>

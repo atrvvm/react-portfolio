@@ -1,3 +1,6 @@
+
+// TODO: Add button text links for the social accounts
+
 export default function Footer(){
     return (
         <div className="socials">

@@ -1,5 +1,3 @@
-/** @format */
-
 import myResume from "../assets/resume-image.png";
 
 const styles = {
@@ -21,12 +19,16 @@ const styles = {
   },
 };
 
+const handleDownload = () => {
+  window.location = "https://drive.google.com/file/d/1PjH4z9dGpSIjN4PhPkTl5Df1tyq9Dhj7/view?usp=drive_link";
+}
+
 export default function Resume() {
   return (
     <div className="page-wrapper">
       <div className="skills-text">
         <div className="column">
-          <h1 style={styles.heading}>Technical</h1>
+          <h1 style={styles.heading}>EXPERIENCE</h1>
           <ul style={styles.ul}>
             <li style={styles.list}>
               <span style={styles.span}>Front-End:</span> HTML, CSS, JavaScript,
@@ -44,10 +46,13 @@ export default function Resume() {
         </div>
       </div>
       <div className="row">
-        <img
-          src={myResume}
-          className="resume-img"
-        />
+        <div className="columns">
+          <img
+            src={myResume}
+            className="resume-img"
+          />
+              <button className="download-btn" onClick={handleDownload}>View Resume</button>
+        </div>
       </div>
     </div>
   );

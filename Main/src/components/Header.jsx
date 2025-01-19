@@ -1,17 +1,14 @@
-/** @format */
+import NavItem from "./Navigation";
 
-import "../styles/App.css";
-import Navigation from "./Navigation";
-
-function Header() {
+export default function Header() {
   return (
     <header className="header">
-      <div className="header-nav">
-        <h3>At.</h3>
-        <Navigation />
+      <div className="header-layout">
+        <h3 className="header-name">アンナ</h3>
+      </div>
+      <div className="nav-component">
+        <NavItem />
       </div>
     </header>
   );
 }
-
-export default Header;

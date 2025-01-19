@@ -1,0 +1,120 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #E4F2F1;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 64px;
+  padding-right: 64px;
+  background-color: #253031;
+}
+
+.header .header-layout {
+  display: flex;
+  flex: 800px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-name {
+  color: #cceb7f;
+  font-size: 4rem;
+  font-family: 'Cherry Bomb One';
+  line-height: 0%;
+  min-width: 220px;
+}
+
+.nav-section .nav-layout {
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+}
+
+a {
+  color: #BFC0C0;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: inherit;
+  padding: 12px;
+  border-bottom: #7393962c solid 4px;
+}
+
+a:hover {
+  color: #C3F73A;
+}
+
+.nav-item a.active {
+  color: #C3F73A;
+  border-bottom: #C3F73A solid 4px;
+}
+
+.page-section {
+  display: flex;
+  justify-content: center;
+}
+
+.page-section .page-layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  padding: 32px;
+  row-gap: 32px;
+}
+
+.page-section h1 {
+  font-size: 2.5em;
+}
+
+.page-section p {
+  font-size: 1.5em;
+}
+
+.about-avatar {
+  background-image: url(./assets/notion-portrait.png);
+  width: 360px;
+  height: 360px;
+  border-radius: 999px;
+}
+
+.about-bento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 64px;
+  padding: 64px;
+  background-color: #1c353560;
+  border-radius: 24px;
+  box-shadow: 12px 8px 64px #202a2ba6;
+  border: 2px solid #25303142;
+}
+
+.about-text {
+  row-gap: 24px;
+}
+
+.about-text h1 {
+  line-height: 0%;
+  padding-bottom: 32px;
+}
+
+.nav-component {
+  min-width: 450px;
+}

@@ -1,8 +1,8 @@
-export default function Resume() {
+export default function Projects() {
   return (
     <div className="page-section">
       <div className="page-layout">
-      <h1>RESUME</h1>
+      <h1>PORTFOLIO</h1>
         <p>
           Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
           Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed

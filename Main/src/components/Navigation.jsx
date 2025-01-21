@@ -1,11 +1,9 @@
 /** @format */
 
 import React from "react";
-import { NavLink, useLocation } from "react-router";
+import { NavLink } from "react-router";
 
 export default function NavRoute() {
-  const currentPage = useLocation().pathname;
-
   return (
     <div className="nav-section">
       <div className="nav-layout">

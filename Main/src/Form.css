@@ -1,0 +1,43 @@
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control {
+    display: flex;
+    padding: 12px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-label {
+ margin-bottom: 0.5rem;
+ font-weight: 500;
+}
+
+label {
+    display: inline-block;
+}
+
+.error {
+    font-size: 1em;
+    color: red;
+    line-height: 0%;
+    font-weight: 400;
+    padding-top: 8px;
+}

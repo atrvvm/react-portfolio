@@ -11,7 +11,6 @@ const styles = {
     fontSize: "1.8em",
     color: "black",
     fontWeight: "500",
-    color: "#354446",
     height: "fit-content",
   },
   ul: {

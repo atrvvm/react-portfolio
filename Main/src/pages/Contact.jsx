@@ -1,3 +1,7 @@
+/** @format */
+
+import ContactForm from "../components/Form";
+
 const styles = {
   heading: {
     lineHeight: "0%",
@@ -9,12 +13,14 @@ const styles = {
   },
 };
 
-
 export default function Contact() {
   return (
     <div className="page-wrapper">
       <div className="column-layout">
         <h1 style={styles.heading}>CONTACT</h1>
+        <div className="form-container">
+          <ContactForm />
+        </div>
       </div>
     </div>
   );

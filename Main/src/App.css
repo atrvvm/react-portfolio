@@ -9,6 +9,7 @@
   align-items: stretch;
   flex-grow: 1;
   margin: 0 auto;
+  margin-bottom: 92px;
 }
 
 body {
@@ -104,7 +105,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 64px;
+  padding-top: 92px;
   gap: 64px;
 }
 
@@ -123,7 +124,6 @@ a:hover {
   flex-basis: auto;
   flex: 1;
   margin-right: 48px;
-  width: 400px;
 }
 
 .resume-header {
@@ -137,6 +137,7 @@ a:hover {
 }
 
 .resume-img {
+  width: 440px;
   height: 520px;
   margin-bottom: 1.2em;
   box-shadow: 12px 8px 64px #202a2ba6;
@@ -154,16 +155,16 @@ button {
   border: #7ea320 solid 1px;
 }
 
-.download-btn:hover {
-  background-color: #bfe06b !important;
-}
-
 .download-btn {
-  width: 100% !important;
+  width: 440px !important;
   padding: 12px !important;
   border-radius: 8px !important;
   background-color: #C3F73A !important;
   color:  #253031 !important;
+}
+
+.download-btn:hover {
+  background-color: #bfe06b !important;
 }
 
 .social-btn-group {
@@ -185,3 +186,26 @@ button {
   font-weight: 600;
 }
 
+.column-layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: left;
+  justify-content: left;
+  max-width: 1280px;
+}
+
+.row-layout {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  max-width: 1280px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 32px;
+  margin-top: 32px;
+}

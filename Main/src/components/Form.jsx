@@ -136,14 +136,13 @@ export default function ContactForm() {
     }
   };
 
-  const isEmailValid = (email) => {
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailPattern.test(email);
-  };
-
   const handleEmailChange = (e) => {
+    const isEmailValid = (email) => {
+      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      return emailPattern.test(email);
+    };
     const value = e.target.value;
-    setEmail(value);
+    setEmail(email);
 
     if (!isEmailValid(value)) {
       setError("Invalid email format.");
@@ -166,12 +165,12 @@ export default function ContactForm() {
       </Form.Group>
       <Form.Group
         type="email"
-        value={email}
         onChange={handleEmailChange}
         controlId="validationCustom02"
       >
         <Form.Label>EMAIL</Form.Label>
-        <Form.Control placeholder="test@example.com" />
+        <Form.Control 
+        placeholder="test@example.com" />
         {error && <p className="error">{error}</p>}
       </Form.Group>
       <Form.Group controlId="validationCustom03">

@@ -2,8 +2,8 @@ form {
     display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 32px;
     margin-top: 32px;
+    gap: 16px;
 }
 
 .form-container {
@@ -41,3 +41,4 @@ label {
     font-weight: 400;
     padding-top: 8px;
 }
+

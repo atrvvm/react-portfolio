@@ -136,10 +136,9 @@ export default function ContactForm() {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!error) {
-    }
+  const isEmailValid = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
   };
 
   const handleEmailChange = (e) => {
@@ -154,14 +153,13 @@ export default function ContactForm() {
   };
 
   return (
-    <Form
-      noValidate
-      type="text"
-      value={inputValue}
-      onChange={handleInputChange}
-      onSubmit={handleSubmit}
-    >
-      <Form.Group controlId="validationCustom01">
+    <Form>
+      <Form.Group
+        type="text"
+        value={inputValue}
+        onChange={handleInputChange}
+        controlId="validationCustom01"
+      >
         <Form.Label>NAME</Form.Label>
         <Form.Control placeholder="Jane Doe" />
         {error && <p className="error">{error}</p>}
@@ -175,6 +173,14 @@ export default function ContactForm() {
         <Form.Label>EMAIL</Form.Label>
         <Form.Control placeholder="test@example.com" />
         {error && <p className="error">{error}</p>}
+      </Form.Group>
+      <Form.Group controlId="validationCustom03">
+        <Form.Label>MESSAGE</Form.Label>
+        <Form.Control
+          as="textarea"
+          row={5}
+          placeholder="(Optional)"
+        />
       </Form.Group>
       <button type="submit">Submit</button>
     </Form>
